@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24/04/2015 04:45:34 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="bean.BeanUser" table="USER">
+        <id name="Id" type="int">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="Nombre" type="java.lang.String">
+            <column name="NOMBRE" />
+        </property>
+        <property name="ApellidoPaterno" type="java.lang.String">
+            <column name="APELLIDOPATERNO" />
+        </property>
+         <property name="ApellidoMaterno" type="java.lang.String">
+            <column name="APELLIDOMATERNO" />
+        </property>
+        <property name="RFC" type="java.lang.String">
+            <column name="RFC" />
+        </property>
+        <property name="CorreoElectronico" type="java.lang.String">
+            <column name="CORREOELECTRONICO" />
+        </property>
+    </class>
+</hibernate-mapping>
